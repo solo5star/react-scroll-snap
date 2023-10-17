@@ -27,7 +27,13 @@ const ScrollSnapCSSItemList = (props: ScrollSnapCSSItemListProps) => {
 
     return (
       <ScrollSnapItemProvider key={index} offset={offset} position={visiblePosition}>
-        {Math.abs(offset) <= renderDistance && itemRenderer(item, index)}
+        <div
+          style={{
+            height: '100%',
+          }}
+        >
+          {Math.abs(offset) <= renderDistance && itemRenderer(item, index)}
+        </div>
       </ScrollSnapItemProvider>
     );
   });
