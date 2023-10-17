@@ -1,7 +1,8 @@
 {
   "name": "@solo5star/react-scroll-snap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
+  "main": "dist/index.js",
   "author": {
     "name": "solo5star",
     "url": "https://github.com/solo5star"
@@ -10,6 +11,12 @@
     "type": "git",
     "url": "https://github.com/solo5star/react-scroll-snap.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -17,9 +24,6 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "devDependencies": {
     "@storybook/blocks": "^7.4.6",

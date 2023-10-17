@@ -4,7 +4,11 @@
     "skipLibCheck": true,
     "module": "Node16",
     "moduleResolution": "Node16",
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "package.json",
+    "vite.config.ts"
+  ]
 }
